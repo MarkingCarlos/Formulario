@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+		<section class="back" >
+		<form class="formulario">
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+			
+		<section class="titulo">
+			<div>
+			<h1>Cadastro de DEVs</h1>
+			</div>
+		</section>
+				 
+				 
+			
+        <!-- Início do formulário -->
+        
+			
+            <section  class="nome" >             
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+			</section>
+            
+
+            <!-- Campo de email com-->
+            <section class="email">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </section>
+			 
+            <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <section class="tenologias">
+				<div>
+                <p><strong>De qual lado da aplicação você desenvolve?</strong></p>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+					</div>
+            </section>
+
+            <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+            <section class="senioridade">
+                <label for="senioridade"><strong>Senioridade</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Júnior</option>
+                  <option>Pleno</option>
+                  <option>Sênior</option>
+                </select>
+            </section>
+
+            <section>
+                <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <section class="check" >
+					<br>
+					<div>
+                    <p><strong>Selecione as tecnologias que utiliza:</strong></p>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnologia1"> HTML</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnologia2"> CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                    <label for="tecnologia3"> JavaScript</label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                    <label for="tecnologia4"> PHP</label>
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                    <label for="tecnologia5"> C#</label>
+                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                    <label for="tecnologia6"> Python</label>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Caixa de texto -->
+            <section class="texto">
+                <br>
+				<div>
+                <label><strong>Conte um pouco mais da sua experiência: </strong></label>
+                <textarea rows="6" id="experiencia" name="experiencia"></textarea>
+					</div>
+            </section>
+
+            <section class="button"> 
+            <button type="submit" onsubmit="">Concluído</button> 
+			</section>	
+			</form>
+		</section>
+        
+
+    </body>
+
+</html>
+
+
+
+
